@@ -1,1 +1,116 @@
-"<!DOCTYPE html><html><head><title>Landing Page</title></head><body><h1>Hello SkillCraft!</h1></body></html>" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillCraft Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav id="navbar" class="nav">
+      <div class="nav-inner">
+        <a class="logo" href="#home">SkillCraft</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Build real skills. Launch your career.</h1>
+        <p>Project-based internships and mentorships in Web Development, UI/UX, Data Science, and more.</p>
+        <div class="hero-cta">
+          <a href="#services" class="btn primary">Get Started</a>
+          <a href="#contact" class="btn ghost">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <!-- simple SVG illustration -->
+        <svg width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="300" height="220" rx="16" fill="url(#g)"/>
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00c6ff"/>
+              <stop offset="1" stop-color="#0072ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide practical, mentor-led learning experiences designed to help you launch a technology career quickly.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Build full-stack projects and deploy production-ready apps.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>Design user-centered interfaces and prototypes.</p>
+        </div>
+        <div class="card">
+          <h3>Data Science</h3>
+          <p>Analyze real datasets and build predictive models.</p>
+        </div>
+        <div class="card">
+          <h3>Digital Marketing</h3>
+          <p>Learn growth strategies, analytics, and campaign management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Send us a message and we'll get back within 1 business day.</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SkillCraft — All rights reserved.</div>
+      <div class="footer-links">Made with ❤️</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
