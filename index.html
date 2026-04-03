@@ -1,116 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkillCraft Landing Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation -->
-  <header class="site-header">
-    <nav id="navbar" class="nav">
-      <div class="nav-inner">
-        <a class="logo" href="#home">SkillCraft</a>
-        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SkillCraft — Professional Training & Internships</title>
+    <meta name="description" content="Project-based internships and mentor-led training in Web Development, UI/UX, Data Science and more.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav id="navbar" class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner">
+          <a href="#home" class="logo">SkillCraft</a>
+          <button id="nav-toggle" class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <ul id="nav-links" class="nav-links" role="menubar">
+            <li role="none"><a role="menuitem" href="#home">Home</a></li>
+            <li role="none"><a role="menuitem" href="#about">About</a></li>
+            <li role="none"><a role="menuitem" href="#services">Services</a></li>
+            <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">Practical training. Real projects. Faster growth.</h1>
+            <p class="hero-sub">Gain the skills employers want with mentor-led, hands-on internships and guided projects.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#services">Explore Programs</a>
+              <a class="btn outline" href="#contact">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <img src="" alt="" class="hero-illustration" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>About SkillCraft</h2>
+          <p class="lead">We design short, high-impact programs that pair learners with mentors and real industry projects. Our focus is practical outcomes and job-ready skills.</p>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <h2>Programs</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Web Development</h3>
+              <p>Full-stack projects, deployment, and portfolio-ready apps.</p>
+            </article>
+            <article class="card">
+              <h3>UI / UX Design</h3>
+              <p>User research, wireframing, and high-fidelity prototypes.</p>
+            </article>
+            <article class="card">
+              <h3>Data Science</h3>
+              <p>Data analysis, visualization, and ML fundamentals.</p>
+            </article>
+            <article class="card">
+              <h3>Digital Marketing</h3>
+              <p>Analytics, campaigns, and growth strategy.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="lead">Send a message and we'll respond within 1 business day.</p>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-grid">
+              <label>
+                <span class="sr-only">Name</span>
+                <input type="text" name="name" placeholder="Full name" required>
+              </label>
+              <label>
+                <span class="sr-only">Email</span>
+                <input type="email" name="email" placeholder="Email address" required>
+              </label>
+            </div>
+            <label>
+              <span class="sr-only">Message</span>
+              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="foot-left">© <span id="year"></span> SkillCraft</div>
+        <div class="foot-right">Made with care • <a href="#contact">Contact</a></div>
       </div>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <h1>Build real skills. Launch your career.</h1>
-        <p>Project-based internships and mentorships in Web Development, UI/UX, Data Science, and more.</p>
-        <div class="hero-cta">
-          <a href="#services" class="btn primary">Get Started</a>
-          <a href="#contact" class="btn ghost">Contact Us</a>
-        </div>
-      </div>
-      <div class="hero-illustration" aria-hidden="true">
-        <!-- simple SVG illustration -->
-        <svg width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="0" width="300" height="220" rx="16" fill="url(#g)"/>
-          <defs>
-            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#00c6ff"/>
-              <stop offset="1" stop-color="#0072ff"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We provide practical, mentor-led learning experiences designed to help you launch a technology career quickly.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Programs</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Build full-stack projects and deploy production-ready apps.</p>
-        </div>
-        <div class="card">
-          <h3>UI/UX Design</h3>
-          <p>Design user-centered interfaces and prototypes.</p>
-        </div>
-        <div class="card">
-          <h3>Data Science</h3>
-          <p>Analyze real datasets and build predictive models.</p>
-        </div>
-        <div class="card">
-          <h3>Digital Marketing</h3>
-          <p>Learn growth strategies, analytics, and campaign management.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions? Send us a message and we'll get back within 1 business day.</p>
-      <form id="contact-form" class="contact-form">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email" required>
-        </div>
-        <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
-        <div class="form-actions">
-          <button type="submit" class="btn primary">Send Message</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> SkillCraft — All rights reserved.</div>
-      <div class="footer-links">Made with ❤️</div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
