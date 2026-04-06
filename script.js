@@ -24,7 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 // Button interaction
 function showMessage() {
-    alert("Welcome to SkillCraft 🚀");
+    alert("Welcome to my portfolio 🚀");
 }
 
 
