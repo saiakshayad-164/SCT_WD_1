@@ -1,115 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>SkillCraft — Professional Training & Internships</title>
-    <meta name="description" content="Project-based internships and mentor-led training in Web Development, UI/UX, Data Science and more.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Landing Page</title>
+
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <nav id="navbar" class="nav" role="navigation" aria-label="Main navigation">
-        <div class="container nav-inner">
-          <a href="#home" class="logo">SkillCraft</a>
-          <button id="nav-toggle" class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu">
-            <span class="hamburger" aria-hidden="true"></span>
-          </button>
-          <ul id="nav-links" class="nav-links" role="menubar">
-            <li role="none"><a role="menuitem" href="#home">Home</a></li>
-            <li role="none"><a role="menuitem" href="#about">About</a></li>
-            <li role="none"><a role="menuitem" href="#services">Services</a></li>
-            <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
-          </ul>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">SkillCraft</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div class="content">
+        <h1>Welcome to SkillCraft</h1>
+        <p>Build modern and responsive websites with ease.</p>
+        <button onclick="showMessage()">Get Started</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We provide high-quality web development solutions and training to help students and professionals grow in tech.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive UI/UX designs.</p>
         </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section id="home" class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1 class="hero-title">Practical training. Real projects. Faster growth.</h1>
-            <p class="hero-sub">Gain the skills employers want with mentor-led, hands-on internships and guided projects.</p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#services">Explore Programs</a>
-              <a class="btn outline" href="#contact">Get in Touch</a>
-            </div>
-          </div>
-          <div class="hero-media" aria-hidden="true">
-            <img src="" alt="" class="hero-illustration" />
-          </div>
+        <div class="card">
+            <h3>Development</h3>
+            <p>Full-stack web applications.</p>
         </div>
-      </section>
-
-      <section id="about" class="section about">
-        <div class="container">
-          <h2>About SkillCraft</h2>
-          <p class="lead">We design short, high-impact programs that pair learners with mentors and real industry projects. Our focus is practical outcomes and job-ready skills.</p>
+        <div class="card">
+            <h3>Training</h3>
+            <p>Internships and skill-building programs.</p>
         </div>
-      </section>
+    </div>
+</section>
 
-      <section id="services" class="section services">
-        <div class="container">
-          <h2>Programs</h2>
-          <div class="cards">
-            <article class="card">
-              <h3>Web Development</h3>
-              <p>Full-stack projects, deployment, and portfolio-ready apps.</p>
-            </article>
-            <article class="card">
-              <h3>UI / UX Design</h3>
-              <p>User research, wireframing, and high-fidelity prototypes.</p>
-            </article>
-            <article class="card">
-              <h3>Data Science</h3>
-              <p>Data analysis, visualization, and ML fundamentals.</p>
-            </article>
-            <article class="card">
-              <h3>Digital Marketing</h3>
-              <p>Analytics, campaigns, and growth strategy.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <p class="lead">Send a message and we'll respond within 1 business day.</p>
-          <form id="contact-form" class="contact-form" novalidate>
-            <div class="form-grid">
-              <label>
-                <span class="sr-only">Name</span>
-                <input type="text" name="name" placeholder="Full name" required>
-              </label>
-              <label>
-                <span class="sr-only">Email</span>
-                <input type="email" name="email" placeholder="Email address" required>
-              </label>
-            </div>
-            <label>
-              <span class="sr-only">Message</span>
-              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
-            </label>
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Send message</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SkillCraft | All Rights Reserved</p>
+</footer>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="foot-left">© <span id="year"></span> SkillCraft</div>
-        <div class="foot-right">Made with care • <a href="#contact">Contact</a></div>
-      </div>
-    </footer>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
